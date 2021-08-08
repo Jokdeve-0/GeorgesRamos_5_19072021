@@ -1,0 +1,26 @@
+#section-order{
+    @media(min-width:$mob-xl-min){
+        width:700px;
+        margin: 1em auto;
+    }
+    & #Info{
+        margin: 1em;
+        padding:1em;
+        border-radius: 10px;
+        background: $clr-light;
+        @media(min-width:$mob-xl-min){
+            width:600px;
+            margin: 1em auto;
+        }
+        & h3{
+            background: $bg-bis;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 2em;
+            font-size:1em;
+        }
+        & p:nth-child(2){
+            font-size:.6em;
+        }
+    }
+}

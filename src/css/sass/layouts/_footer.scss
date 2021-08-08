@@ -1,0 +1,42 @@
+footer{
+    padding-top: 1.5em;
+    color:$clr-light;
+    & div{
+        @include flex-mix($flow:column);
+        padding: 0 1em;
+        @media (min-width:$mob-md-min) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+    & nav{
+        width: 100%;
+        background: rgba(0, 0, 0, .2);
+        margin-bottom: 1.5em;
+        padding: 1em;
+        text-align:center;
+        border-radius:15px;
+        @media (min-width:$mob-md-min) {
+            width: 35%;
+            margin-bottom: 0;
+        }
+        @media(min-width:$tab-min){
+            width: 35%;
+        }
+        & p{
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 1em;
+            background: rgba(0, 0, 0, .2);
+            color:$clr-light;
+            border-radius:15px;
+        }
+    }
+    h2{
+        font-size: .9em;
+        text-align: center;
+        padding-bottom: 2em;
+        @media (min-width:$mob-md-min) {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Orinoco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./src/img/favicon.jpg">
+    <link rel="stylesheet" href="./src/css/public/main.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./"><img id="logo" src="./src/img/oriCam.png" alt="logo de l'entreprise Orinico" width="600" height="160"></a>
+        </div>
+        <nav>
+            <a class="linkIco" href="./">
+                <i class="fas fa-home"></i>
+                <span class="sm-hide">&nbsp;ACCEUIL</span>
+            </a>
+            <a class="linkIco" href="?page=basket">
+                <i class="fa fa-shopping-basket" aria-hidden="true" id="basket"><small id="count_product"></small></i>
+                <span class="sm-hide">&nbsp;PANIER</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-title">
+            <h1>Ori*Cameras.com<br></h1>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <nav>
+                <p>Others Orinoco</p>
+                <a class="linkIco" href="./"><i class="fas fa-camera-retro"></i></a>
+                <a class="linkIco" href="./"><i class="fas fa-paw"></i></a>
+                <a class="linkIco" href="./"><i class="fas fa-chair"></i></a>
+            </nav>
+            <nav>
+                <p>Liens sociaux</p>
+                <a class="linkIco" href="./"><i class="fab fa-facebook-square"></i></a>
+                <a class="linkIco" href="./"><i class="fab fa-twitter-square"></i></a>
+                <a class="linkIco" href="./"><i class="fab fa-instagram-square"></i></a>
+            </nav>
+        </div>
+        <h2>© 2021-2022 Orinoco <i class="fas fa-sync-alt ml-3" id="reload"></i></h2>
+    </footer>
+
+    <script src="./dist/polyfill.bundle.js"></script>
+    <script src="./dist/app.bundle.js"></script>
+
+</body>
+</html>

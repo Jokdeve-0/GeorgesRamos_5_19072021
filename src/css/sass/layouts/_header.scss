@@ -1,0 +1,15 @@
+header{
+    @include flex-mix($items:center,$flow:row nowrap);
+    padding: .2em;
+    & div{
+        width: 59%;
+    }
+    & nav{
+        @include flex-mix($content:end);
+        width: 40%;
+        padding: 1em;
+        & span {
+            margin-right: .5em;
+        }
+    }
+}

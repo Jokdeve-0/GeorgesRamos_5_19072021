@@ -1,0 +1,4 @@
+node_modules
+.sass-cache
+.vscode
+utils.txt

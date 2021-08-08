@@ -1,0 +1,10 @@
+#section-title{
+    background: $bg-light;
+    padding: .1em 0;
+    background: $clr-light;
+    & h1{
+        padding: 1em;
+        text-align: center;
+        background: $bg-bis;
+    }
+}
