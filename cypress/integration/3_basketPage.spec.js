@@ -21,7 +21,7 @@ describe('On the Basket page when the document is loaded', () => {
         cy.get('.line-total > p:nth-child(2)').invoke('text')
         .then((text)=>{
             cy.get('.line-total > p:nth-child(2)')
-            .should('have.text',"0€")
+            .should('have.text',"0.00€")
         })
     })
 
@@ -34,8 +34,8 @@ describe('On the Basket page when the document is loaded', () => {
             .invoke('text')
             .then((text)=>{
                 let price = parseInt(text.trim())
-                cy.get('.line').first().children(' p:nth-child(4)').should('have.text',`${price}€`)
-                cy.get('.line-total').children(' p:nth-child(2)').should('have.text',`${price*1}€`) 
+                cy.get('.line').first().children(' p:nth-child(4)').should('have.text',`${price.toFixed(2)}€`)
+                cy.get('.line-total').children(' p:nth-child(2)').should('have.text',`${price.toFixed(2)}€`) 
             })
     })
     
@@ -48,8 +48,8 @@ describe('On the Basket page when the document is loaded', () => {
             .invoke('text')
             .then((text)=>{
                 let price = parseInt(text.trim())
-                cy.get('.line').first().children(' p:nth-child(4)').should('have.text',`${price}€`)
-                cy.get('.line-total').children(' p:nth-child(2)').should('have.text',`${price*3}€`) 
+                cy.get('.line').first().children(' p:nth-child(4)').should('have.text',`${price.toFixed(2)}€`)
+                cy.get('.line-total').children(' p:nth-child(2)').should('have.text',`${(price*3).toFixed(2)}€`) 
             })
     })
 

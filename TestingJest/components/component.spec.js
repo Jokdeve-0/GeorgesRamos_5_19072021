@@ -19,7 +19,7 @@ describe('Using components', () => {
 
         const dom2 = (new JSDOM(box_basket({name:"testingName",price:100},"valid")))
         expect(dom2.window.document.querySelector('p:nth-child(2)').textContent).toEqual('testingName')
-        expect(dom2.window.document.querySelector('p:nth-child(3)').textContent).toEqual("100€")
+        expect(dom2.window.document.querySelector('p:nth-child(3)').textContent).toEqual("1.00€")
 
     })
 
